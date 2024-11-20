@@ -10,12 +10,13 @@ Responsive Design: Fully optimized for mobile, tablet, and desktop views.
 Modern UI: A clean, user-friendly interface inspired by Airbnb’s design principles.
 
 <h2>🛠️ Tech Stack</h2>
-Frontend <br>
+
+<h3>Frontend</h3>
 React.js with Hooks <br>
 Redux for state management <br>
 Tailwind CSS for styling<br>
 Axios for API requests<br>
-Backend<br>
+<h3>Backend</h3>
 Node.js with Express.js<br>
 MongoDB with Mongoose<br>
 JWT for authentication and authorization<br>
@@ -40,45 +41,31 @@ Git
 Steps to Run Locally
 Clone the repository:
 
-bash
-Copy code
+
 git clone https://github.com/yourusername/wunderlist.git
 cd wunderlist
 Install dependencies:
 
-bash
-Copy code
+
 cd client
 npm install
 cd ../server
 npm install
 Set up environment variables:
 
-Create a .env file in the /server directory with:
-env
-Copy code
-PORT=5000
-MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_URL=your_cloudinary_url
 Start the application:
 
 Backend:
-bash
-Copy code
 cd server
 npm start
 Frontend:
-bash
-Copy code
 cd client
 npm start
 Open the application in your browser:
 
-arduino
-Copy code
 http://localhost:3000
-🌟 Demo
+
+<h2>🌟 Demo</h2>
 Provide a live demo link if available:
 Live Demo
 
