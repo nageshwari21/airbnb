@@ -4,6 +4,7 @@ const path = require('path');  //require path
 const app = express();
 const methodOverride = require('method-override');  //require method-override middleware
 const Listing = require('./models/listing');  //require listing model
+const Review = require('./models/review');  //require review model
 const ejsmate = require('ejs-mate');  //require ejs-mate for template rendering
 const wrapAsync = require('./utility/Wrapasync');  //require custom middleware
 const ExpressError = require('./utility/ExpressError');  //require express-error-handling middleware
@@ -51,6 +52,19 @@ app.get('/listings/:id/edit', async (req, res) => {
     const listing = await Listing.findById(id);
     res.render('listings/edit.ejs', {listing: listing});
 })
+
+//add a review to a listing
+app.post('/listings/:id/reviews', wrapAsync(async (req, res) => {
+    let {id} = req.params;
+    const {review} = req.body;
+    // console.log(review.rating)
+    const listing = await Listing.findById(id);
+    let newReview = new Review(review);
+    listing.reviews.push(newReview);
+    await newReview.save();
+    await listing.save();
+    res.redirect(`listings/:${id}`);
+}));
 
 //update a listing
 app.put('/listings/:id', async (req, res) => {
