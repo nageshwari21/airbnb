@@ -49,7 +49,7 @@ Ensure you have the following installed:
 
 2. Install dependencies:  
    ```bash
-   cd client
+    cd Airbnb-A-full-stack-project
    npm install
    ```
 
