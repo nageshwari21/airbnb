@@ -4,8 +4,9 @@ const schema = mongoose.Schema;
 
 // Listing schema
 const reviewSchema = new schema({
-    comment: String,
+    comment: {type: String, required: true},
     rating: {
+        required: true,
         type: Number,
         min: 1,
         max: 5
