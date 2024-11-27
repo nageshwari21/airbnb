@@ -17,6 +17,7 @@
 - **Booking System**: Reserve properties through a smooth booking flow.  
 - **Search and Filters**: Filter properties by location, price, and availability.  
 - **Responsive Design**: Optimize for mobile and desktop devices.
+- **Review**: A user can review each listing and can give rating out of 5.
 
 ---
 
@@ -37,6 +38,8 @@
 ### Prerequisites  
 Ensure you have the following installed:  
 - Node.js  
+- Express js
+- ejs
 - MongoDB  
 - Git  
 
@@ -86,7 +89,7 @@ This project is in progress. Below are some features and improvements planned fo
 
 Have feedback or suggestions? Feel free to connect:  
 
-- **Himanshu**  
+- **Name: Fnu Himanshu**  
 - **GitHub**: https://github.com/Himanshu19-coder.   
 
 ---
