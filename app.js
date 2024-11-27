@@ -63,7 +63,7 @@ app.post('/listings/:id/reviews', wrapAsync(async (req, res) => {
     listing.reviews.push(newReview);
     await newReview.save();
     await listing.save();
-    res.redirect(`listings/:${id}`);
+    res.redirect(`listings/:${id}`, {message: 'Review added successfully'  });
 }));
 
 //update a listing
