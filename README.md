@@ -89,7 +89,7 @@ This project is in progress. Below are some features and improvements planned fo
 
 Have feedback or suggestions? Feel free to connect:  
 
-- **Name: Fnu Himanshu**  
+- **Name: Himanshu**  
 - **GitHub**: https://github.com/Himanshu19-coder.   
 
 ---
