@@ -16,12 +16,18 @@ app.use(express.static(path.join(__dirname, 'public')));  //use express static m
 app.use(express.urlencoded({extended: true}));  //use express body-parser middleware to parse form data
 app.use(methodOverride('_method'));  //use method-override middleware to handle PUT and DELETE requests
 
-const db = 'mongodb://127.0.0.1:27017/airbnb';
+const db = 'mongodb+srv://ghongadenisha:MhkwQOwiRmynsJlL@wunderlistcluster.zbjkonl.mongodb.net/wunderlistDB?retryWrites=true&w=majority&appName=WunderlistCluster';
+mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log("Connected to MongoDB Atlas"))
+  .catch(err => console.error("Connection error:", err));
 
-// Connect to MongoDB
-mongoose.connect(db)
-    .then(() => console.log('Connected to MongoDB'))
-    .catch(err => console.error('Could not connect to MongoDB', err));
+// node app.js
+
+
+// // Connect to MongoDB
+// mongoose.connect(db)
+//     .then(() => console.log('Connected to MongoDB'))
+//     .catch(err => console.error('Could not connect to MongoDB', err));
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
