@@ -85,8 +85,8 @@ This project is in progress. Below are some features and improvements planned fo
 
 Have feedback or suggestions? Feel free to connect:  
 
-- **Name: Himanshu**  
-- **GitHub**: https://github.com/Himanshu19-coder.   
+- **Name: NAGESHWARI
+- **GitHub**: https://github.com/nageshwari21   
 
 ---
 
@@ -97,9 +97,3 @@ Check back later for updates!
 
 ---
 
-
-Email: himanshunain2005@gmail.com <br>
-GitHub: Himanshu19-coder
-=======
-# airbnb
->>>>>>> e6a017a3fea1731b3796ca53d908b547a8f3b723
