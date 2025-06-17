@@ -29,9 +29,10 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
 //     .then(() => console.log('Connected to MongoDB'))
 //     .catch(err => console.error('Could not connect to MongoDB', err));
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
-})
+app.get('/', async (req, res) => {
+    let data = await Listing.find();
+    res.render('listings/index.ejs', { listings: data });
+});
 
 //show all listings in the database
 app.get('/listings', async (req, res) => {
