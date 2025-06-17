@@ -1,8 +1,4 @@
-<h1><b>Wunderlist: An Airbnb-Inspired Web Application 🌍🏠</b> </h1>
 
-**Wunderlist** is a work-in-progress full-stack web application inspired by Airbnb. The goal of this project is to create a platform where users can discover, list, and book unique properties worldwide. While the project is under development, key functionalities like listing creation and editing have been implemented, with many more features planned.
-
----
 ## 🚀 **Current Progress**
 
 ### Completed Features:
@@ -104,3 +100,6 @@ Check back later for updates!
 
 Email: himanshunain2005@gmail.com <br>
 GitHub: Himanshu19-coder
+=======
+# airbnb
+>>>>>>> e6a017a3fea1731b3796ca53d908b547a8f3b723
